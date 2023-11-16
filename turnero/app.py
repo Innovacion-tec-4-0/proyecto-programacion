@@ -11,7 +11,7 @@ class ejemplo(QMainWindow): #creamos una clase y le pasamos como parametro qmain
 
     def __init__(self) -> None: #inicializamos el constructor
         super().__init__() #iniciamos un super init
-        uic.loadUi("tecladoooo.ui", self)
+        uic.loadUi("turnero/tecladoooo.ui", self)
         # Llamamos al método para cargar el valor global de turno
         self.load_global_turno()
 
@@ -87,14 +87,14 @@ class ejemplo(QMainWindow): #creamos una clase y le pasamos como parametro qmain
     def load_global_turno(self):
         # Intenta cargar el valor de global_turno desde el archivo
         try:
-            with open("global_turno.txt", "r") as file:
+            with open("turnero/global_turno.txt", "r") as file:
                 ejemplo.global_turno = int(file.read())
         except FileNotFoundError:
             ejemplo.global_turno = 0
 
     def save_global_turno(self):
         # Guarda el valor actual de global_turno en el archivo
-        with open("global_turno.txt", "w") as file:
+        with open("turnero/global_turno.txt", "w") as file:
             file.write(str(ejemplo.global_turno))
 
    
