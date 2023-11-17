@@ -11,7 +11,7 @@ class ejemplo(QMainWindow): #creamos una clase y le pasamos como parametro qmain
 
     def __init__(self) -> None: #inicializamos el constructor
         super().__init__() #iniciamos un super init
-        uic.loadUi("turnero/tecladoooo.ui", self)
+        uic.loadUi("turnero/teclado.ui", self)
         # Llamamos al método para cargar el valor global de turno
         self.load_global_turno()
 
@@ -63,6 +63,8 @@ class ejemplo(QMainWindow): #creamos una clase y le pasamos como parametro qmain
         self.Preferencial.clicked.connect(self.guardartramite)
         self.Preferencial.clicked.connect(self.tickett)
         self.inicio.setVisible(False)
+        self.hora.setVisible(False)
+        self.fecha.setVisible(False)
         
     def guardar_numero(self):
         numero = self.entrada.text()

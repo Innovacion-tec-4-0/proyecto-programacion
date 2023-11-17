@@ -12,13 +12,13 @@ class Conectar():
             def __init__(self):
                 self.conexion = mysql.connector.connect(host="localhost",
                                                     user="root",
-                                                    password="Sferreyra$2002",
-                                                    database="nuevoturnero")
+                                                    password="pancho1677",
+                                                    database="turneronuevo")
                 if self.conexion.is_connected:
                     print("Conexión a la base de datos exitosa.")
         except mysql.connector.Error as error:
             print("No se pudo conectar a la base de datos.", error)
-
+#Sferreyra$2002 nuevoturnero
 
         def insertar(self,a):
             if self.conexion.is_connected:
@@ -58,14 +58,14 @@ class Conectar():
                         resultados = cursor.fetchall()
                         self.nombre = ""
                         if len(resultados) < 1:
-                                self.nombre = "DNI INCORRECTO"
+                                self.nombre = "SU DNI NO EXISTE" "\n" "DIRIJASE A VENTANILLA""\n" "POR FAVOR"
                                 print("")
                                 print("---| no hay datos para mostrar |---")
                         
                                 self.conexion.close()
                         else:
                             for i in resultados:
-                                self.nombre = "Bienvenid@ " + "\n".join(i) #para que realize un salto de lina en la tupla 
+                                self.nombre = "Bienvenida/o " + "\n".join(i) #para que realize un salto de lina en la tupla 
                                 print(i)
                                 return i
                                 self.conexion.close()
