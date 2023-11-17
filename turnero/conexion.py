@@ -12,13 +12,13 @@ class Conectar():
             def __init__(self):
                 self.conexion = mysql.connector.connect(host="localhost",
                                                     user="root",
-                                                    password="pancho1677",
-                                                    database="turneronuevo")
+                                                    password="Sferreyra$2002",
+                                                    database="nuevoturnero")
                 if self.conexion.is_connected:
                     print("Conexión a la base de datos exitosa.")
         except mysql.connector.Error as error:
             print("No se pudo conectar a la base de datos.", error)
-#Sferreyra$2002 nuevoturnero
+
 
         def insertar(self,a):
             if self.conexion.is_connected:
