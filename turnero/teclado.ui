@@ -13,15 +13,22 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 170, 0);
+background-color: rgb(255, 255, 127);</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLineEdit" name="entrada">
     <property name="geometry">
      <rect>
       <x>310</x>
-      <y>150</y>
+      <y>170</y>
       <width>161</width>
       <height>51</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
    </widget>
    <widget class="QPushButton" name="boton1">
@@ -183,10 +190,10 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>170</x>
-      <y>70</y>
-      <width>461</width>
-      <height>81</height>
+      <x>140</x>
+      <y>60</y>
+      <width>541</width>
+      <height>101</height>
      </rect>
     </property>
     <property name="font">
@@ -234,6 +241,13 @@
       <height>51</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 127);
+border-color: rgb(0, 0, 0);
+border-color: rgb(0, 0, 0);
+border: 2px solid #8f8f91;
+border-radius: 8px;</string>
+    </property>
     <property name="text">
      <string>Caja</string>
     </property>
@@ -247,6 +261,13 @@
       <height>51</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 127);
+border-color: rgb(0, 0, 0);
+border-color: rgb(0, 0, 0);
+border: 2px solid #8f8f91;
+border-radius: 8px;</string>
+    </property>
     <property name="text">
      <string>Licencia de conducir</string>
     </property>
@@ -259,6 +280,13 @@
       <width>131</width>
       <height>51</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 127);
+border-color: rgb(0, 0, 0);
+border-color: rgb(0, 0, 0);
+border: 2px solid #8f8f91;
+border-radius: 8px;</string>
     </property>
     <property name="text">
      <string>Catastro</string>
@@ -286,6 +314,13 @@
       <height>51</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 127);
+border-color: rgb(0, 0, 0);
+border-color: rgb(0, 0, 0);
+border: 2px solid #8f8f91;
+border-radius: 8px;</string>
+    </property>
     <property name="text">
      <string>Comercio</string>
     </property>
@@ -298,6 +333,13 @@
       <width>131</width>
       <height>51</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 127);
+border-color: rgb(0, 0, 0);
+border-color: rgb(0, 0, 0);
+border: 2px solid #8f8f91;
+border-radius: 8px;</string>
     </property>
     <property name="text">
      <string>Agua</string>
@@ -312,6 +354,13 @@
       <height>51</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 127);
+border-color: rgb(0, 0, 0);
+border-color: rgb(0, 0, 0);
+border: 2px solid #8f8f91;
+border-radius: 8px;</string>
+    </property>
     <property name="text">
      <string>Propiedades</string>
     </property>
@@ -324,6 +373,13 @@
       <width>131</width>
       <height>51</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 127);
+border-color: rgb(0, 0, 0);
+border-color: rgb(0, 0, 0);
+border: 2px solid #8f8f91;
+border-radius: 8px;</string>
     </property>
     <property name="text">
      <string>Tasas del automotor</string>
@@ -338,6 +394,13 @@
       <height>51</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 127);
+border-color: rgb(0, 0, 0);
+border-color: rgb(0, 0, 0);
+border: 2px solid #8f8f91;
+border-radius: 8px;</string>
+    </property>
     <property name="text">
      <string>Servicio Preferencial</string>
     </property>
@@ -350,6 +413,14 @@
       <width>131</width>
       <height>51</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 127);
+border-color: rgb(0, 0, 0);
+border-color: rgb(0, 0, 0);
+border: 2px solid #8f8f91;
+border-radius: 8px;
+</string>
     </property>
     <property name="text">
      <string>Otros</string>
@@ -383,7 +454,7 @@
     <property name="geometry">
      <rect>
       <x>350</x>
-      <y>410</y>
+      <y>450</y>
       <width>81</width>
       <height>21</height>
      </rect>
@@ -401,7 +472,7 @@
     <property name="geometry">
      <rect>
       <x>360</x>
-      <y>370</y>
+      <y>400</y>
       <width>51</width>
       <height>21</height>
      </rect>
