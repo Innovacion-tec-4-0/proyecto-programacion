@@ -1,8 +1,10 @@
--- MySQL dump 10.13  Distrib 8.0.32, for Win64 (x86_64)
+CREATE DATABASE  IF NOT EXISTS `nuevoturnero` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `nuevoturnero`;
+-- MySQL dump 10.13  Distrib 8.0.34, for Win64 (x86_64)
 --
--- Host: 127.0.0.1    Database: nuevoturnero
+-- Host: localhost    Database: nuevoturnero
 -- ------------------------------------------------------
--- Server version	8.0.32
+-- Server version	8.2.0
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -35,7 +37,7 @@ CREATE TABLE `historial_tramites` (
   KEY `idTramite` (`idTramite`),
   CONSTRAINT `historial_tramites_ibfk_1` FOREIGN KEY (`idUsuario`) REFERENCES `usuario` (`idUsuario`),
   CONSTRAINT `historial_tramites_ibfk_2` FOREIGN KEY (`idTramite`) REFERENCES `tramite` (`idTramite`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -44,7 +46,7 @@ CREATE TABLE `historial_tramites` (
 
 LOCK TABLES `historial_tramites` WRITE;
 /*!40000 ALTER TABLE `historial_tramites` DISABLE KEYS */;
-INSERT INTO `historial_tramites` VALUES (1,6,14,'Gracias por elegirnos su turno es: 1','2023-11-13','12:44:16'),(2,3,11,'Gracias por elegirnos su turno es: 2','2023-11-13','12:44:25'),(3,1,18,'Gracias por elegirnos su turno es: 3','2023-11-13','12:44:35'),(4,4,13,'Gracias por elegirnos su turno es: 4','2023-11-13','12:44:52'),(5,5,16,'Gracias por elegirnos su turno es: 5','2023-11-13','12:45:11');
+INSERT INTO `historial_tramites` VALUES (1,3,1,'Gracias por elegirnos su turno es: 17','2023-11-19','16:31:37');
 /*!40000 ALTER TABLE `historial_tramites` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -60,7 +62,7 @@ CREATE TABLE `tramite` (
   `tipode_tramite` varchar(100) NOT NULL,
   PRIMARY KEY (`idTramite`),
   UNIQUE KEY `idTramite_UNIQUE` (`idTramite`)
-) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -69,7 +71,7 @@ CREATE TABLE `tramite` (
 
 LOCK TABLES `tramite` WRITE;
 /*!40000 ALTER TABLE `tramite` DISABLE KEYS */;
-INSERT INTO `tramite` VALUES (11,'Caja'),(12,'Catastro'),(13,'Licencia de conducir'),(14,'Agua'),(15,'Otros'),(16,'Propiedades'),(17,'Comercio'),(18,'Tasas del automotor'),(19,'Servicio Preferencial');
+INSERT INTO `tramite` VALUES (1,'Caja'),(2,'Catastro'),(3,'Licencia de conducir'),(4,'Agua'),(5,'Otros'),(6,'Propiedades'),(7,'Comercio'),(8,'Tasas del automotor'),(9,'Servicio Preferencial'),(10,'Cementerio');
 /*!40000 ALTER TABLE `tramite` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -104,7 +106,7 @@ CREATE TABLE `usuario` (
 
 LOCK TABLES `usuario` WRITE;
 /*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
-INSERT INTO `usuario` VALUES (1,'336','gaston','trejo','1988-06-03',NULL,'catamarca',33333333,'gston','casadi','masculino','nada'),(2,'33','fdfa','sss','1999-01-01',NULL,'cc',22,'fe','solo','muj','nadd'),(3,'303','caro','duarte','1982-05-20',NULL,'cordoba',444433,'caro','sola','femeni','ee'),(4,'285','vic','urcola','1981-05-22',NULL,'la falda',555,'victo','casada','femeni','geminis'),(5,'347','cesar','martins','1733-03-30',NULL,'la calera',8877,'luqui','casado','mascu','milico'),(6,'438','santi','ferreyra','2002-05-22',NULL,'arroyito',888,'santi','solito','M','redes'),(7,'123','kevin','kessler','1995-08-23',NULL,'san francisco',321546789,'kevin@gmail.com','casado','M','Profe');
+INSERT INTO `usuario` VALUES (1,'336','Gaston','Trejo','1988-06-03',NULL,'catamarca',33333333,'gaston@gmail.com','casado','masc','nada'),(2,'33','Juan','Perez','1999-01-01',NULL,'cc',22,'JP@gmail.com','soltero','masc','escorpio'),(3,'303','Caro','Duarte','1982-05-20',NULL,'cordoba',444433,'caro@gmail.com','soltera','fem','tauro'),(4,'285','Victoria','Urcola','1981-05-22',NULL,'la falda',555,'victo@gmail.com','casada','fem','geminis'),(5,'347','Cesar','Martins','1987-03-30',NULL,'la calera',8877,'luqui@gmail.com','casado','masc','milico'),(6,'438','Santi','Ferreyra','2002-05-22',NULL,'arroyito',888,'santi@gmail.com','soltero','masc','redes'),(7,'123','Kevin','Kessler','1995-08-23',NULL,'san francisco',321546789,'kevin@gmail.com','casado','masc','Profe');
 /*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -117,4 +119,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-11-13 12:47:58
+-- Dump completed on 2023-11-19 16:52:56
