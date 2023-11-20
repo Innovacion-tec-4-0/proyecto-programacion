@@ -12,7 +12,7 @@ class Conectar():
             def __init__(self):
                 self.conexion = mysql.connector.connect(host="localhost",
                                                     user="root",
-                                                    password="***",
+                                                    password="Delfines/2",
                                                     database="nuevoturnero")
                 if self.conexion.is_connected:
                     print("Conexión a la base de datos exitosa.")
@@ -58,7 +58,7 @@ class Conectar():
                         resultados = cursor.fetchall()
                         self.nombre = ""
                         if len(resultados) < 1:
-                                self.nombre = "SU DNI NO EXISTE" "\n" "DIRIJASE A VENTANILLA""\n" "POR FAVOR"
+                                self.nombre = "Su DNI no esá registrado\nUsted será registrado\nen ventanilla."
                                 print("")
                                 print("---| no hay datos para mostrar |---")
                         
