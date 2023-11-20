@@ -12,7 +12,7 @@ class Conectar():
             def __init__(self):
                 self.conexion = mysql.connector.connect(host="localhost",
                                                     user="root",
-                                                    password="Delfines/2",
+                                                    password="***",
                                                     database="nuevoturnero")
                 if self.conexion.is_connected:
                     print("Conexión a la base de datos exitosa.")
