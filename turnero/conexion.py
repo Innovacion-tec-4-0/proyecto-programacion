@@ -58,7 +58,7 @@ class Conectar():
                         resultados = cursor.fetchall()
                         self.nombre = ""
                         if len(resultados) < 1:
-                                self.nombre = "Su DNI no esá registrado\nUsted será registrado\nen ventanilla."
+                                self.nombre = "Su DNI no está registrado\nUsted será registrado\nen ventanilla."
                                 print("")
                                 print("---| no hay datos para mostrar |---")
                         
